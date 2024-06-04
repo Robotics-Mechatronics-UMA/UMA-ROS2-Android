@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Borde del archivo (efecto presionado) -->
+    <path
+        android:pathData="M5,3v18c0,1.1 0.9,2 2,2h10c1.1,0 2,-0.9 2,-2V3c0,-1.1 -0.9,-2 -2,-2H7c-1.1,0 -2,0.9 -2,2z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:fillColor="#CCCCCC"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+    <!-- Líneas horizontales (efecto presionado) -->
+    <path
+        android:pathData="M7,8h10M7,12h10M7,16h10"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:fillColor="#CCCCCC"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+</vector>

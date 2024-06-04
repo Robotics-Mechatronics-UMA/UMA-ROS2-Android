@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UMA-ROS2-Android</string>
+    <string name="resolution720_720">720x720</string>
+    <string name="resolution960_720">960x720</string>
+    <string name="resolution1280_720">1280x720</string>
+    <string name="resolution1440_720">1440x720</string>
+    <string name="resolution1920_1080">1920x1080</string>
+    <string name="resolution2048_1536">2048x1536</string>
+    <string name="resolution3840_2160">3840x2160</string>
+    <string name="camera_normal">Normal</string>
+    <string name="camera_wide_angle">Wide-Angle</string>
+    <string name="camera_zoom">Zoom</string>
+</resources>

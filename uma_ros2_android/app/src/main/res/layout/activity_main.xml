@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:visibility="invisible">
+
+    </androidx.camera.view.PreviewView>
+
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:hint="namespace of topics"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/text_provide_name"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/text_provide_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provide agent name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/IntermittentSwitch"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:text="CONNECT"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/nameInput"
+        app:iconTint="#FFFFFF" />
+
+
+    <Switch
+        android:id="@+id/BatterySwitch"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Battery"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:trackTint="@color/light_gray"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/text_additional_publishers"
+        android:layout_marginTop="80dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/LocationSwitch"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:trackTint="@color/light_gray"
+        android:textSize="18sp"
+        android:layout_below="@id/BatterySwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/IMUSwitch"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="IMU"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:trackTint="@color/light_gray"
+        android:textSize="18sp"
+        android:layout_below="@id/LocationSwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/text_additional_publishers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional internal sensors publishers"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_camera_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera settings"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/IMUSwitch"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/SelectResolution"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/light_gray"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="720x720"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/text_camera_settings"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/SelectCamera"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/light_gray"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Normal"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@id/text_camera_settings"
+        app:iconTint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@id/Connect"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="210dp"
+        android:src="@drawable/white_info"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="APP INFO"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginTop="120dp"
+        android:visibility="invisible"
+        android:layout_above="@id/info"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/batteryInput"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:hint="Hz"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/BatterySwitch"
+        android:layout_alignTop="@id/BatterySwitch"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible"
+        android:background="#000000"/>
+
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:hint="Hz"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/LocationSwitch"
+        android:layout_alignTop="@id/LocationSwitch"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible"
+        android:background="#000000"/>
+
+    <EditText
+        android:id="@+id/IMUInput"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:hint="Hz"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/IMUSwitch"
+        android:layout_alignTop="@id/IMUSwitch"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible"
+        android:background="#000000"/>
+
+    <Switch
+        android:id="@+id/IntermittentSwitch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Intermittent mode"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:trackTint="@color/light_gray"
+        android:textSize="18sp"
+        android:layout_below="@id/SelectResolution"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <TextView
+        android:id="@+id/data_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PROCESSED IMAGE DATA\nNo data received"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="11sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_above="@id/info"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="-30dp"
+        android:layout_marginStart="210dp"
+        android:layout_below="@id/Connect"
+        android:src="@drawable/data_logo"
+        android:visibility="invisible"/>
+
+
+
+
+
+</RelativeLayout>

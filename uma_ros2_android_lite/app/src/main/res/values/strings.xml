@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UMA-ROS2-Android-Lite</string>
+    <string name="resolution800_600">800x600</string>
+    <string name="resolution1280_720">1280x720</string>
+    <string name="resolution1280_960">1280x960</string>
+    <string name="resolution1920_1080">1920x1080</string>
+    <string name="resolution2048_1536">2048x1536</string>
+    <string name="resolution3840_2160">3840x2160</string>
+</resources>
